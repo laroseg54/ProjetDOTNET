@@ -10,7 +10,8 @@ namespace ProjetDOTNET.dal
         { }
         public DbSet<Discipline> Disciplines { get; set; }
         public DbSet<Section> Sections { get; set; }
-
+        public DbSet<Utilisateur> Utilisateurs { get; set; }
+      
 
     }
 

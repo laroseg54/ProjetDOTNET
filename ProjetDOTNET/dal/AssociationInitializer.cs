@@ -25,10 +25,10 @@ namespace ProjetDOTNET.dal
 
             var sections = new  SortedSet<Section>
             {
-                new Section(1,"judo compétition","le judo ou ça castagne dure pour gagner des sous blyat"),
-                new Section(1,"judo loisir","le judo ou ça glande"),
-                new Section(2,"natation compét","la natation ou ça nage dure pour gagner des sous blyat"),
-                new Section(2,"natation loisir","la natation ou ça glande"),
+                new Section(1,"judo compétition","le judo ou ça castagne dure pour gagner des sous blyat",42),
+                new Section(1,"judo loisir","le judo ou ça glande",37),
+                new Section(2,"natation compét","la natation ou ça nage dure pour gagner des sous blyat",88),
+                new Section(2,"natation loisir","la natation ou ça glande",99),
             };
 
             sections.ForEach(s => context.Sections.Add(s));
