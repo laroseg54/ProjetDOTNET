@@ -138,16 +138,16 @@
     <Compile Include="Migrations\202011081830315_InitialCreate.designer.cs">
       <DependentUpon>202011081830315_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202011102218384_CreateTables.cs" />
-    <Compile Include="Migrations\202011102218384_CreateTables.designer.cs">
-      <DependentUpon>202011102218384_CreateTables.cs</DependentUpon>
+    <Compile Include="Migrations\202011111330042_CreateTables.cs" />
+    <Compile Include="Migrations\202011111330042_CreateTables.designer.cs">
+      <DependentUpon>202011111330042_CreateTables.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Adherent.cs" />
     <Compile Include="Models\Creneau.cs" />
     <Compile Include="Models\Section.cs" />
     <Compile Include="Models\Discipline.cs" />
-    <Compile Include="Models\Utilisateur.cs" />
+    <Compile Include="Models\Compte.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -212,8 +212,8 @@
     <EmbeddedResource Include="Migrations\202011081830315_InitialCreate.resx">
       <DependentUpon>202011081830315_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011102218384_CreateTables.resx">
-      <DependentUpon>202011102218384_CreateTables.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202011111330042_CreateTables.resx">
+      <DependentUpon>202011111330042_CreateTables.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

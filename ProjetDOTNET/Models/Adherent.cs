@@ -1,26 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using System.Web;
 
 namespace ProjetDOTNET.Models
 {
-    public class Adherent : Utilisateur
+    public class Adherent 
     {
-        public Adherent(string nom, string prenom, string email,DateTime dateNaissance, string numTel, SortedSet<Creneau> creneaux) : base(nom, prenom, email)
+        public Adherent(int numCompte,DateTime dateNaissance, string numTel) 
         {
             
             DateNaissance = dateNaissance;
-            NumTel = numTel;
-            Creneaux = creneaux;
             ResteaPayer = 0;
             Creneaux = new SortedSet<Creneau>();
+            CompteID = numCompte;
         }
 
-     
+        public int Id { get; set; }
+        public int CompteID { get; set; }
         public double ResteaPayer { get; set; }
         public DateTime DateNaissance { get; set; }
         public string NumTel { get; set; }
+        public virtual Compte Compte { get; set; }
 
         public virtual SortedSet<Creneau> Creneaux { get; set; }
 

@@ -5,9 +5,9 @@ using System.Web;
 
 namespace ProjetDOTNET.Models
 {
-    public class Utilisateur
+    public class Compte
     {
-        public Utilisateur(string nom, string prenom, string email)
+        public Compte(string nom, string prenom, string email)
         {
             Nom = nom;
             Prenom = prenom;
